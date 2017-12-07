@@ -1,0 +1,38 @@
+### Customize.YAML ###
+# https://materialdesignicons.com/cheatsheet
+
+   yeelight.12314:
+      friendly_name: Bedroom yeelight
+      icon: mdi:lightbulb
+   media_player.awesome_cast:
+      friendly_name: 'Chrome Cast'
+      entity_picture: /local/chrome.jpg
+
+  # Customize groups #
+   entity_id: group.living_room_lights"
+    friendly_name: 'Lights'
+    icon: mdi:lightbulb
+
+
+ # Dark Sky #
+  entity_id: sensor.dark_sky_apparent_temperature
+    friendly_name: 'Apparent'
+
+  entity_id: sensor.dark_sky_daily_summary
+    friendly_name: 'Week'
+
+  entity_id: sensor.dark_sky_precip
+    friendly_name: 'Precipitation'
+    icon: mdi:weather-rainy
+
+  entity_id: sensor.dark_sky_temperature
+    friendly_name: 'Temperature'
+
+
+  entity_id: sensor.dark_sky_wind_bearing
+    friendly_name: 'Wind Direction'
+    icon: mdi:weather-windy
+
+  entity_id: sensor.dark_sky_wind_speed
+    friendly_name: 'Wind Speed'
+    icon: mdi:weather-windy

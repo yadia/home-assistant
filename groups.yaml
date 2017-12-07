@@ -1,0 +1,29 @@
+## Group.yaml ##
+### View
+ # defualt_view:
+ #   view: yes
+ #   icon: mdi:home
+ #   entities:
+ #     - group.living_room
+ #     - group.bedroom
+ #     - group.current_weather
+
+ living_room:
+   name: Living room
+   entities:
+    - media_player.awesome_cast
+
+ bedroom:
+   name: Bedroom
+   entities:
+     - yeelight.23432434
+
+ current_weather:
+   name: Current Weather
+   entities:
+     - sensor.dark_sky_temperature_template
+     - sensor.dark_sky_daily_high_low_template
+     - sensor.dark_sky_humidity
+     - sensor.dark_sky_precip_intensity
+     - sensor.dark_sky_wind_speed
+     - sensor.dark_sky_pressure

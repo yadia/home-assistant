@@ -1,0 +1,44 @@
+
+### Configuration ###
+homeassistant:
+  name: Home
+  latitude: !secret lat
+  longitude: !secret longitude
+  elevation: 430
+  unit_system: metric
+  time_zone: Asia/Taipei
+  group: !include group.yaml
+  customize: !include customize.yaml
+
+  http:
+   api_password: !secret htt_password
+   trusted_networks:
+     - 123.123.123.123
+   login_attempts_threshold: 3
+
+  packages:
+     - pack_1: !include my_package.yaml
+     - pack_2: !include_dir_named packages  #adds all the directory packages
+
+  frontend:
+
+  history:
+
+  discovery:
+
+  sun:
+
+# Components #
+ iftt: !secret iftt_api
+
+ mqtt:
+   embedded:
+     - clinet_id: hass
+     - username: !secret mqtt_user
+     - password: !secret mqtt_pass
+
+# Includes #
+ climate: !include includes/climate.YAML
+
+ sensor: !include_dir_list sensors/
+ automation: !include_dir_merge_list automation

@@ -1,0 +1,8 @@
+# Netflix and Chill Script #
+- alias: Netflix
+  trigger:
+     platform: state
+     entity_id:  yeelight.124
+  action:
+    - service: media.chromcast
+    - condition: state
